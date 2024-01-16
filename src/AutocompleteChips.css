@@ -49,7 +49,7 @@
   }
   
   .chip {
-    background-color: #f0ebeb;
+    background-color: #9b8e8e;
     color: #242424;
     font-weight: bold;
     border: 1px solid #ccc;
@@ -57,6 +57,7 @@
     padding: 4px 8px;
     margin-right: 8px;
     margin-bottom: 8px;
+    margin-top: 8px;
     display: flex;
     align-items: center;
     animation: fadeIn 0.5s ease-in-out;
@@ -65,7 +66,7 @@
   .chip span {
     cursor: pointer;
     margin-left: 4px;
-    color: #888;
+    color: #242424;
   }
   
   @keyframes fadeIn {
@@ -84,11 +85,24 @@
 
   .profile_pic{
     border-radius: 50%;
-    height: 48px;
-    width: 48px;
+    height: 45px;
+    width: 45px;
   }
   .item-chip{
     display: flex;
     align-items: center;
+    
+  }
+
+  .name{
+    color: #f0f0f0;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .email{
+    color:#888;
+    font-weight: lighter;
+    font-size: 14px;
   }
   

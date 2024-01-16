@@ -16,31 +16,31 @@ const AutocompleteChips = () => {
     id : 2,
     name : 'Amit Rao',
     profile_pic : 'https://picsum.photos/id/2/200',
-    email : 'soham.bhardwaj@zepto.com'
+    email : 'amit.rao@zepto.com'
   }, {
     id : 3,
     name : 'Arun Bhardawaj',
     profile_pic : 'https://picsum.photos/id/3/200',
-    email : 'soham.bhardwaj@zepto.com'
+    email : 'arun.bhardwaj@zepto.com'
   }, {
     id : 4,
     name : 'Suvam Rao',
     profile_pic : 'https://picsum.photos/id/4/200',
-    email : 'soham.bhardwaj@zepto.com'
+    email : 'suvam.rao@zepto.com'
   }, {
     id : 5,
     name : 'Varun Bhardawaj',
     profile_pic : 'https://picsum.photos/id/5/200',
-    email : 'soham.bhardwaj@zepto.com'
+    email : 'varun.bhardwaj@zepto.com'
   }, {id : 6,
-    name : 'Sipra Rao',
+    name : 'Dipesh Rao',
     profile_pic : 'https://picsum.photos/id/6/200',
-    email : 'soham.bhardwaj@zepto.com'
+    email : 'dipesh.rao@zepto.com'
   }, {
     id : 7,
     name : 'Akshat Bhardawaj',
     profile_pic : 'https://picsum.photos/id/7/200',
-    email : 'soham.bhardwaj@zepto.com'
+    email : 'akshat.bhardwaj@zepto.com'
   }];
   const [isInputFocused, setIsInputFocused] = useState(false);
 
@@ -98,7 +98,7 @@ const AutocompleteChips = () => {
             <div className='item-chip'>
               <img src={item.profile_pic} className='profile_pic' />
               <a className='name'>{item.name}</a>
-              <img src = "https://icons8.com/icon/46/close" onClick={() => handleChipRemove(item)}/>
+              <span onClick={() => handleChipRemove(item)}>X</span>
             </div>
           </div>
         ))}

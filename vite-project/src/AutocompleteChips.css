@@ -1,0 +1,94 @@
+/* AutocompleteChips.css */
+
+.autocomplete-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 20px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  .autocomplete-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    transition: max-height 0.3s, opacity 0.3s;
+  }
+  
+  .autocomplete-list li {
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s;
+  }
+  
+  .autocomplete-list li:hover {
+    background-color: #f0f0f0;
+    color: #242424;
+  }
+  
+  .chip-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .chip {
+    background-color: #f0ebeb;
+    color: #242424;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .chip span {
+    cursor: pointer;
+    margin-left: 4px;
+    color: #888;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile_pic{
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+  }
+  .item-chip{
+    display: flex;
+    align-items: center;
+  }
+  
